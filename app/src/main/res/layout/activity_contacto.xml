@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contacto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mbarrios.petagram.ContactoActivity">
+
+
+    <TextView
+        android:id="@+id/tvTituloContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_titulo_contacto"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="@dimen/tv_version"
+        android:layout_marginTop="@dimen/tv_titulo_contacto"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="@dimen/tv_titulo_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutEditTextnameContacto"
+        android:layout_below="@id/tvTituloContacto"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nameContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_nombre"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutEditTextMensaje"
+        android:layout_below="@id/layoutEditTextnameContacto"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nameMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_mensaje"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutEditTextMail"
+        android:layout_below="@id/layoutEditTextMensaje"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nameMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_mail"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutEditTextMail"
+        android:layout_marginTop="@dimen/margin_ranking"
+        android:text="@string/btn_mail"
+        android:id="@+id/buttonMail"
+        android:theme="@style/EnviarBoton"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvContacto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="@dimen/corner_radius_cardview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_layuot"
+        >
+
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/pluma"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/customborder"
+            android:layout_below="@+id/imgFoto"
+            >
+
+            <TextView
+                android:id="@+id/tvRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_ranking"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_ranking_dos"
+                android:textSize="@dimen/tv_nombre"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/imgHuesoDos"
+                android:layout_width="@dimen/icono_hueso_dos"
+                android:layout_height="@dimen/icono_hueso_dos"
+                android:src="@drawable/hueso"
+                android:paddingLeft="@dimen/margin_nombre"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

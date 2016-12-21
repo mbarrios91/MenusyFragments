@@ -1,4 +1,4 @@
-package com.mbarrios.petagram;
+package com.mbarrios.petagram.pojo;
 
 import java.util.ArrayList;
 
@@ -18,6 +18,12 @@ public class Mascota {
         this.foto = foto;
         this.ranking = ranking;
     }
+
+    public Mascota(int foto, int ranking){
+        this.foto = foto;
+        this.ranking = ranking;
+    }
+
 
     public String getNombre() {
         return nombre;

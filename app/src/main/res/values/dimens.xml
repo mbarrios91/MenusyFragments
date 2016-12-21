@@ -8,5 +8,13 @@
     <dimen name="icono_hueso_dos">60dp</dimen>
     <dimen name="margin_nombre">20dp</dimen>
     <dimen name="margin_ranking">210dp</dimen>
+    <dimen name="margin_ranking_dos">20dp</dimen>
     <dimen name="tv_nombre">25sp</dimen>
+    <dimen name="tv_version">20sp</dimen>
+    <dimen name="tv_bio">35sp</dimen>
+    <dimen name="tv_desc_padding">500dp</dimen>
+    <dimen name="tv_desc">15sp</dimen>
+    <dimen name="tv_titulo_contacto">70dp</dimen>
+    <dimen name="dim_circular_imagen">250dp</dimen>
+    <dimen name="border_img">2dp</dimen>
 </resources>

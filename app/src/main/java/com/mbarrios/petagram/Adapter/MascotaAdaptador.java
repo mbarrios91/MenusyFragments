@@ -1,4 +1,4 @@
-package com.mbarrios.petagram;
+package com.mbarrios.petagram.Adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -9,8 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mbarrios.petagram.R;
+import com.mbarrios.petagram.pojo.Mascota;
+
 import java.util.ArrayList;
-import java.util.List;
 
 /** Created by mbarrios on 15/11/2016. **/
 
@@ -21,14 +23,16 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     public MascotaAdaptador(ArrayList<Mascota> mascotas, Activity activity) {
         this.mascotas = mascotas;
-        this.activity = activity;
+        this.activity = activity;;
     }
 
 
     @Override
     public MascotaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_mascotas, parent, false);
-        return new MascotaViewHolder(v);
+
+            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_mascotas, parent, false);
+
+            return new MascotaViewHolder(v);
     }
 
     @Override

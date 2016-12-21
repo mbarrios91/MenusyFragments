@@ -7,6 +7,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.mbarrios.petagram.Adapter.MascotaAdaptador;
+import com.mbarrios.petagram.pojo.Mascota;
+
 import java.util.ArrayList;
 
 public class MascotasFavoritas extends AppCompatActivity {
@@ -27,7 +30,7 @@ public class MascotasFavoritas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mascotas_favoritas);
 
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+    //    getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         listaMascotas = (RecyclerView) findViewById (R.id.rvMascotasFavoritas);
 

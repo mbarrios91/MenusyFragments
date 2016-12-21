@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mbarrios.petagram.Fragment.PerfilFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/crImagen"
+        android:layout_width="@dimen/dim_circular_imagen"
+        android:layout_height="@dimen/dim_circular_imagen"
+        android:src="@drawable/pet_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:civ_border_color="@color/gris"
+        app:civ_border_width="@dimen/border_img"
+        />
+
+    <TextView
+        android:id="@+id/tvNamePet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_pet"
+        android:layout_below="@+id/crImagen"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/tv_nombre"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvNamePet"/>
+
+</RelativeLayout>

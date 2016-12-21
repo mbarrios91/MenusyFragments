@@ -14,8 +14,14 @@
         android:title="star" />
 
     <!-- Settings, should always be in the overflow -->
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+    <item android:id="@+id/action_contacto"
+        android:title="@string/action_contacto"
         yourapp:showAsAction="never" />
+
+
+    <item android:id="@+id/action_acerca_de"
+        android:title="@string/action_acerca"
+        yourapp:showAsAction="never" />
+
 
 </menu>
