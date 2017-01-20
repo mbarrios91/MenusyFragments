@@ -7,6 +7,8 @@ import java.util.ArrayList;
  */
 
 public class Mascota {
+
+    private int id;
     private String nombre;
     private int foto;
     private int ranking;
@@ -22,6 +24,10 @@ public class Mascota {
     public Mascota(int foto, int ranking){
         this.foto = foto;
         this.ranking = ranking;
+    }
+
+    public Mascota(){
+
     }
 
 
@@ -46,7 +52,7 @@ public class Mascota {
     }
 
     public void setRanking(int ranking) {
-        this.ranking = ranking + this.ranking ;
+        this.ranking = ranking;
     }
 
     public void mascotasFavoritas(String nombre, int foto, int ranking) {
@@ -57,5 +63,13 @@ public class Mascota {
             favorito.set(0, new Mascota(nombre, foto, ranking));
         }
 
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

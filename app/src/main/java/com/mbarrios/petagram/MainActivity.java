@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.action_star:
                     Toast.makeText(this, getResources().getString(R.string.favoritas), Toast.LENGTH_SHORT).show();
-                    /*Intent intent = new Intent(MainActivity.this, MascotasFavoritas.class);
-                    startActivity(intent);*/
+                    Intent intent = new Intent(MainActivity.this, MascotasFavoritas.class);
+                    startActivity(intent);
                     return true;
                 default:
                     return super.onOptionsItemSelected(item);
